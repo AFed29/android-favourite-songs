@@ -8,11 +8,13 @@ public class Song {
     private int ranking;
     private String title;
     private String artist;
+    private int songArt;
 
-    public Song(int ranking, String title, String artist) {
+    public Song(int ranking, String title, String artist, int songArt) {
         this.ranking = ranking;
         this.title = title;
         this.artist = artist;
+        this.songArt = songArt;
     }
 
     public Integer getRanking() {
@@ -25,5 +27,9 @@ public class Song {
 
     public String getArtist() {
         return artist;
+    }
+
+    public Integer getSongArt() {
+        return songArt;
     }
 }
